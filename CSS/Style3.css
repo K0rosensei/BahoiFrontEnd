@@ -14,7 +14,6 @@ a {
 }
 
 header {
-    background-image: url('/icon1/bg.png');
     background-size: cover;
     color: white;
     text-align: center;
@@ -83,7 +82,7 @@ button.masuk {
 }
 
 button.masuk:hover {
-    background-color: #138496;
+    background-color: green;
     color: white;
 }
 
@@ -95,8 +94,7 @@ button.daftar {
 }
 
 button.daftar:hover {
-    background-color: #138496;
-    color: #ffffff;
+    background-color: green;
 }
 
 button .icon {
@@ -108,246 +106,121 @@ button .icon {
     padding: 0px 0px;
 }
 
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.search-bar {
+.judul {
+    background-image: url('/Diving/bgdiving.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    margin-bottom: 50px;
-    background-color: white;
-    margin-left: 370px;
-    margin-right: 370px;
-    border-radius: 50px;
-    padding: 0 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border: black solid;
+    height: 718px;
 }
 
-.search-bar input {
-    width: 450px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 10px;
-}
-
-.search-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px; /* Adjust the button's position */
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.search-bar button:hover {
-    background-color: #e5e5e5; /* Darker info color */
-}
-
-.search-bar button img {
-    width: 24px;
-    height: auto;
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-}
-
-.icon-row {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.icon {
+.judul h1 {
     text-align: center;
-    margin: 10px 20px;
-}
-
-.icon img {
-    width: 50px;
-    height: 50px;
-}
-
-.icon p {
-    margin-top: 10px;
-    font-size: 14px;
+    color: #fff;
+    font-size: 64px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-text-stroke-width: 2px;   
+    -webkit-text-stroke-color: black;   
 }
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h1 {
-    padding-top: 35px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.container h2 {
-    padding-bottom: 30px;
-}
-
-.homestay-grid {
-    display: flex;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 75px;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.homestay-card {
+.card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     width: 300px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
-.homestay-card img {
+.card img {
     width: 100%;
+    height: 300px; /* Menetapkan tinggi gambar yang sama */
+    object-fit: contain; /* Memastikan gambar tetap proporsional */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-.homestay-card h3 {
+.card-content {
+    padding: 10px 0;
+}
+
+.card h3 {
     margin: 10px 0;
     font-size: 20px;
 }
 
-.homestay-card p {
+.card p {
     margin: 5px 0;
+    color: #666;
 }
 
-.info {
+.price-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    margin: 10px 0;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-    font-family: overlock;
-    font-size: small;
-    flex-direction: column; /* Ensure stars and text are stacked vertically */
-    align-items: flex-start; /* Align to the start of the flex container */
-}
-
-.stars {
-    color: #FFD700; /* Gold color for stars */
-    margin-right: 5px;
-}
-
-.details {
-    text-align: right;
-    font-size: small;
+    padding: 10px 0;
 }
 
 .price {
     font-weight: bold;
-    color: #FF5733; /* Bright red color */
+    color: #FF5733;
 }
 
-.homestay-card button {
-    background-color: #17a2b8; /* Bootstrap's info color */
+.unit {
+    font-size: smaller;
+    color: #666;
+}
+
+button {
+    background-color: #17a2b8;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    transition: background-color 0.3s ease;
 }
 
-.homestay-card button:hover {
-    background-color: #138496; /* Darker info color */
-}
-
-.view-all {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.view-all button {
-    background-color: #17a2b8;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-}
-.view-all button:hover {
+button:hover {
     background-color: #138496;
 }
 
-.owner {
-    background-color: #F1F1F1;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 20px;
-}
-.owner > div {
-    text-align: center;
-    flex: 1;
-    position: relative; /* Menambahkan posisi relatif untuk mengatur posisi absolut */
-}
-.owner img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-.owner h4 {
-    margin: 0;
-    padding-bottom: 2px;
+/* Untuk ikon jam */
+.fas.fa-clock {
+    margin-right: 5px;
+    color: #666;
 }
 
-.owner p {
-    margin: 0;
-    padding-bottom: 20px;
-}
 
-.owner .contact {
-    position: absolute;
-    left: 50%; /* Pusatkan horizontal menggunakan transform */
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.owner .contact img {
-    width: 30px;
-    height: 30px;
-}
-
-.location-map {
-    text-align: center;
-}
-.location-map iframe {
-    width: 100%;
-    height: 400px; 
-    max-width: 100%; 
-    border: none; 
-}
 
 footer {
     background-color: #002033;

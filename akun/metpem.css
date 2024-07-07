@@ -183,71 +183,87 @@ header .logo2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .profile-header {
+  .payment-methods {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
   }
   
-  .profile-header .logo {
-    width: 250px;
+  .payment-method {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 15px;
+  }
+
+  .payment-method1 {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .payment-method h4 {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .payment-method1 h4 {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+  }
+  
+  .add-payment {
+    display: flex;
+    align-items: center;
+    background-color: #00D7F4;
+    font-size: small;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 450px;
+  }
+
+  .payment-method1 .add-payment {
+    display: flex;
+    align-items: center;
+    background-color: #00D7F4;
+    font-size: small;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 450px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .add-payment span {
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .payment-icon {
+    width: 35px;
     height: auto;
     margin-right: 10px;
-    margin-bottom: 20px;
   }
   
-  .profile-header h2 {
-    margin: 0;
-    vertical-align: middle;
-    margin-left: 20px;
-  }
-  
-  .account-details {
-    margin-bottom: 20px;
-  }
-  
-  .profile-info {
-    display: flex;
-    align-items: flex-start;
-    background-color: #e0f7fa;
-    padding: 20px;
-    padding-bottom: 60px;
-    border-radius: 10px;
-    position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .profile-picture {
-    width: 80px;
-    height: 80px;
+  .add-icon {
+    background-color: #004d40;
+    color: white;
     border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 10px;
-  }
-  
-  .edit-account {
-    margin-top: 10px;
-    color: #009688;
-    text-decoration: none;
-    font-weight: bold;
-    position: absolute;
-    top: 110px; /* Adjust this value to be right below the profile picture */
-    left: 15px; /* Adjust this value to align with the profile picture */
-  }
-  
-  .profile-text {
-    margin-top: 15px;
-    margin-left: 25px;
-  }
-  
-  .profile-text h3 {
-    margin: 0;
-    color: #00796b;
-  }
-  
-  .profile-text p {
-    margin: 5px 0;
-    color: #004d40;
-  }
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }  
   
   .missions {
     background-color: #e6f7ff;
@@ -296,4 +312,84 @@ header .logo2 {
     .mission-container {
       flex-direction: column;
     }
-  }  
+  }
+  
+  footer {
+    background-color: #002033;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-about {
+    text-align: left;
+    float: left;
+    width: 30%;
+}
+
+.footer-about h3 {
+    margin-bottom: 10px;
+}
+
+.footer-about ul {
+    padding-left: 12px;
+}
+
+.footer-links {
+    text-align: center;
+    float: left;
+    width: 40%;
+}
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links .social-icons {
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    flex-wrap: wrap; /* Jika ingin ikon meluncur ke baris baru ketika tidak cukup ruang */
+}
+
+.footer-links .social-icons li {
+    margin-bottom: 10px;
+    margin-right: 15px; /* Jarak antara setiap ikon */
+}
+
+.footer-links .social-icons li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Pusatkan ikon dan teks secara vertikal */
+}
+
+.footer-links .social-icons li a img {
+    width: 30px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 30px;
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.footer-qr {
+    text-align: right;
+    float: left;
+    width: 30%;
+}
+.footer-qr img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.copyright {
+    background-color: #002033;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid white;
+}
