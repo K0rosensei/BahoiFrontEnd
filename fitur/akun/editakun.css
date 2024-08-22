@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .account-container {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .sidebar {
+    background-color: #d3eaf8;
+    padding: 20px;
+    padding-left: 100px;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  .sidebar .back-button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .sidebar .back-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebar .logo .logo1 {
+    width: 30px;
+    height: auto;
+  }
+  .sidebar .logo .logo2 {
+    width: 100px;
+    height: auto;
+  }
+  
+  .sidebar h2 {
+    margin: 10px 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333333;
+  }
+  
+  .sidebar p {
+    color: #666666;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 20px;
+    background: #f0f4ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+  }
+  
+  p {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  .edit-account, .contact-info {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .edit-account h3, .contact-info h3 {
+    color: #1a1a1a;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group label {
+    flex: 1;
+    color: #999;
+  }
+  
+  .input-group input {
+    flex: 2;
+    border: none;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .input-group select {
+    flex: 2;
+    border: none;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .input-group input[readonly] {
+    cursor: default;
+  }
+  
+  .input-group .edit-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .input-group .edit-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-info .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info .info-content {
+    flex: 1;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .contact-info .verification-status {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    align-items: center;
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 313px;
+  }
+  
+  .contact-info .verification-status img {
+    width: 14px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  
+  .contact-info .edit-button {
+    color: #1e88e5;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #d3eaf8;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+    color: #666666;
+    margin-top: auto;
+  }
+  

@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .account-container {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .sidebar {
+    background-color: #d3eaf8;
+    padding: 20px;
+    padding-left: 100px;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  
+  .sidebar .back-button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .sidebar .back-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebar .logo .logo1 {
+    width: 30px;
+    height: auto;
+  }
+  .sidebar .logo .logo2 {
+    width: 100px;
+    height: auto;
+  }
+  
+  .sidebar h2 {
+    margin: 10px 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #333333;
+  }
+  
+  .sidebar p {
+    color: #666666;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .profile-section, .settings-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333333;
+  }
+  
+  .edit-link {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .profile-details p {
+    margin: 10px 0;
+  }
+  
+  .settings-section h3 {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .setting-option {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .setting-option img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .setting-option p {
+    margin: 0;
+    color: #000000;
+  }
+  
+  footer {
+    background-color: #d3eaf8;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.9em;
+    color: #666666;
+    margin-top: auto;
+  }
+  
